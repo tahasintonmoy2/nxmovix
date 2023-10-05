@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import "./style.scss";
+import "./heroSection.scss";
 
 import useFetch from "../../../hooks/useFetch";
 
@@ -51,7 +51,6 @@ const HeroBanner = () => {
                             onChange={(e) => setQuery(e.target.value)}
                             onKeyUp={searchQueryHandler}
                         />
-                        <button>Search</button>
                     </div>
                 </div>
             </ContentWrapper>
