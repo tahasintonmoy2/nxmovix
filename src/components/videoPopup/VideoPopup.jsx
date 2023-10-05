@@ -1,7 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
+import {MdClose} from 'react-icons/md'
 
-import "./style.scss";
+import "./videopopup.scss";
 
 const VideoPopup = ({ show, setShow, videoId, setVideoId }) => {
     const hidePopup = () => {
@@ -13,7 +14,7 @@ const VideoPopup = ({ show, setShow, videoId, setVideoId }) => {
             <div className="opacityLayer" onClick={hidePopup}></div>
             <div className="videoPlayer">
                 <span className="closeBtn" onClick={hidePopup}>
-                    Close
+                    <MdClose size={32}/>
                 </span>
                 <ReactPlayer
                     url={`https://www.youtube.com/watch?v=${videoId}`}
